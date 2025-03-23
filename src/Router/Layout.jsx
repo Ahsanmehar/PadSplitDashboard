@@ -5,10 +5,10 @@ import Header from "../Components/Common/Header";
 function Layout() {
   return (
     <div className="w-full h-screen">
-      <div className="w-full h-[5%]">
+      <div className="w-full h-[8%]">
         <Header />
       </div>
-      <div className="w-full h-[95%] flex">
+      <div className="w-full h-[92%] flex">
         <div className="w-[15%] h-full">
           <SidebarNav />
         </div>
