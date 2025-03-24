@@ -1,4 +1,4 @@
-import StatCard from "../../Common/StatCard";
+import DashboardStatCard from "./DashboardStatCard";
 
 function MetricsManage() {
   return (
@@ -16,12 +16,36 @@ function MetricsManage() {
 
       <div className="flex flex-col gap-[20px]">
         <div className="flex gap-[20px]">
-          <StatCard title="Customer" value="20" change="8" />
-          <StatCard title="Orders" value="50" change="12" />
+          <DashboardStatCard
+            title="Customer"
+            value="20"
+            change="8"
+            moutian="#EEFAFD"
+            stroke="#57CAEB"
+          />
+          <DashboardStatCard
+            title="Orders"
+            value="50"
+            change="12"
+            moutian="#FFF2F1"
+            stroke="#FA7976"
+          />
         </div>
         <div className="flex gap-[20px]">
-          <StatCard title="Income" value="$2000" change="5" />
-          <StatCard title="Expenses" value="$425" change="15" />
+          <DashboardStatCard
+            title="Income"
+            value="$2000"
+            change="5"
+            moutian="#F0E8F9"
+            stroke="#6418C3"
+          />
+          <DashboardStatCard
+            title="Expenses"
+            value="$425"
+            change="15"
+            moutian="#EFFBF8"
+            stroke="#5DDAB4"
+          />
         </div>
       </div>
 

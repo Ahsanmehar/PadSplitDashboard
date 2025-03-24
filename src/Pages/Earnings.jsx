@@ -1,5 +1,11 @@
+import PayoutReport from "../Components/Layout/Earnings/PayoutReport";
+
 function Earnings() {
-  return <div>Earnings</div>;
+  return (
+    <div className="p-[40px]">
+      <PayoutReport />
+    </div>
+  );
 }
 
 export default Earnings;
