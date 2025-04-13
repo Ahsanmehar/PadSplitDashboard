@@ -1,6 +1,11 @@
+import TeamCom from "../Components/Layout/Team/TeamCom";
+
 function Team() {
-    return <div>Team</div>;
-  }
-  
-  export default Team;
-  
+  return (
+    <>
+      <TeamCom />
+    </>
+  );
+}
+
+export default Team;

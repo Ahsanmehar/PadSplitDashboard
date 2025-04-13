@@ -1,4 +1,3 @@
-import ManageMenu from "../../Common/ManageMenu";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -42,49 +41,12 @@ function HouseManual() {
     prevArrow: <CustomPrevArrow />,
   };
   return (
-    <div className="w-full flex flex-col gap-[20px]">
-      <div className="w-full flex justify-between items-center  py-[10px] px-[20px] bg-white rounded-[5px] shadow-[0px 0px 4.7px 0px #0000004D]">
-        <div className="flex items-center gap-[20px]">
-          <h2 className="text-[20px] text-[#596574] font-medium border-r-[5px] border-[#CC4848] pr-[20px]">
-            77 Sparkes Road
-          </h2>
-          <h2 className="text-[20px] text-[#596574] font-medium">
-            Bray Park QLD 4500
-          </h2>
-
-          <div className="px-[8px] text-[14px] bg-[#12B76A] text-white rounded-[6px] w-fit flex items-center justify-center">
-            <i className="bi bi-dot text-[25px] text-white"></i>8.0
-          </div>
-        </div>
-
-        <button className="w-fit bg-f2 py-[8px] px-[14px] rounded-[5px] text-[14px] font-medium text-white shadow-[0px 1px 2px 0px #1018280D]">
-          Add Room
-        </button>
-
-        <div className="flex items-center gap-[10px]">
-          <h3 className="flex items-center gap-[5px] text-[14px] font-normal text-[#596574] border-r-[2px] border-[#CC4848] pr-[6px]">
-            <i className="bi bi-house-fill text-[18px] text-[#CC4848]"></i>
-            House
-          </h3>
-          <h3 className="flex items-center gap-[5px] text-[14px] font-normal text-[#596574] border-r-[2px] border-[#CC4848] pr-[6px]">
-            <i className="bi bi-house-door text-[18px] text-[#CC4848]"></i>3
-            beds
-          </h3>
-          <h3 className="flex items-center gap-[5px] text-[14px] font-normal text-[#596574] border-r-[2px] border-[#CC4848] pr-[6px]">
-            <i className="bi bi-droplet text-[18px] text-[#CC4848]"></i>2 baths
-          </h3>
-          <h3 className="flex items-center gap-[5px] text-[14px] font-normal text-[#596574] border-r-[2px] border-[#CC4848] pr-[6px]">
-            <i className="bi bi-car-front text-[18px] text-[#CC4848]"></i>0 cars
-          </h3>
-        </div>
-      </div>
-      <ManageMenu />
-
-      <div className="flex h-[460px] items-center justify-between">
+    <div className="w-full flex h-[100vh] flex-col gap-[20px]">
+      <div className="flex items-center justify-between">
         <div className="w-[58%] h-full relative">
           <Slider {...settings}>
             {images.map((src, index) => (
-              <div className="w-full h-[460px]" key={index}>
+              <div className="w-full h-full" key={index}>
                 <img
                   src={src}
                   alt="Error-Image"
@@ -228,7 +190,6 @@ function HouseManual() {
             <h5 className="text-[10px] font-normal">Punch Code Lock</h5>
             <h5 className="text-[12px] font-medium">64201A</h5>
           </div>
-         
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import MyGoogleMap from "../Components/Layout/Dashboard/MyGoogleMap";
 
 function Dashboard() {
   return (
-    <div className="flex justify-between px-[20px] pt-[50px]">
+    <div className="flex justify-between">
       <div className="w-[70%] h-full bg-red-10">
         <MyGoogleMap />
       </div>

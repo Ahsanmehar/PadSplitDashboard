@@ -9,6 +9,7 @@ import ReferAHost from "../Pages/ReferAHost";
 import Team from "../Pages/Team";
 import Backup from "../Pages/Backup";
 import Privacy from "../Pages/Privacy";
+import Profile from "../Pages/Profile";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: "/team", element: <Team /> },
       { path: "/backup", element: <Backup /> },
       { path: "/privacy", element: <Privacy /> },
+      { path: "/profile", element: <Profile /> },
     ],
   },
 ]);

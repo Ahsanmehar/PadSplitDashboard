@@ -76,7 +76,7 @@ function MyGoogleMap() {
               placeholder="Search house, customer, and others"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full bg-[#E0EEFC] rounded-[50px] placeholder:text-[#757575] text-[12px] py-[10px] px-[40px]"
+              className="w-full bg-[#E0EEFC] rounded-[50px] placeholder:text-[#757575] text-[12px] py-[10px] px-[40px] focus:outline-none text-[#757575]"
             />
             <i className="bi bi-search text-[#757575] absolute left-[15px] top-[50%] translate-y-[-50%] text-[16px]"></i>
           </div>

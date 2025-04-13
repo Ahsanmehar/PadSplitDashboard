@@ -1,6 +1,11 @@
+import ResourcesPropertyScores from "../Components/Layout/Resources/ResourcesPropertyScores";
+
 function Resources() {
-    return <div>Resources</div>;
-  }
-  
-  export default Resources;
-  
+  return (
+    <>
+      <ResourcesPropertyScores />
+    </>
+  );
+}
+
+export default Resources;

@@ -10,22 +10,8 @@ function SidebarNav() {
             isActive ? "is-Active" : "is-Active-hover"
           }
         >
-          {({ isActive }) => (
-            <>
-              <i
-                className={`bi bi-house-door text-[20px] ${
-                  isActive ? "text-white" : "text-[#CC4848]"
-                }`}
-              ></i>
-              <h2
-                className={`text-[15px] font-medium ${
-                  isActive ? "text-white" : "text-f3"
-                }`}
-              >
-                Dashboard
-              </h2>
-            </>
-          )}
+          <i className="bi bi-house-door text-[#CC4848] text-[20px]"></i>
+          <h2 className="text-[15px] font-medium">Dashboard</h2>
         </NavLink>
         <div className="flex flex-col gap-[10px]">
           <h4 className="text-[14px] text-text2 font-medium">Operational</h4>

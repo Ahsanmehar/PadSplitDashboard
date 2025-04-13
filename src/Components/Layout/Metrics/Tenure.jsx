@@ -1,9 +1,7 @@
-import MetricsMenu from "../../Common/MetricsMenu";
 
 function Tenure() {
   return (
     <div className="w-full h-[90%] flex flex-col gap-[20px]">
-      <MetricsMenu />
       <h1 className="text-[28px] font-semibold">Tenure</h1>
 
       <div className="flex justify-between items-center">

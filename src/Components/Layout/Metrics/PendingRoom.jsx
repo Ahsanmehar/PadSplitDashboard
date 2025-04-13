@@ -1,9 +1,7 @@
-import MetricsMenu from "../../Common/MetricsMenu";
 
 function PendingRoom() {
   return (
     <div className="w-full h-[90%] flex flex-col gap-[20px]">
-      <MetricsMenu />
       <h1 className="text-[28px] font-semibold">Pending Room</h1>
 
       <div className="w-full flex flex-col gap-[20px] rounded-[10px] p-[25px] bg-white">

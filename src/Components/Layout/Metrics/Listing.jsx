@@ -1,9 +1,7 @@
-import MetricsMenu from "../../Common/MetricsMenu";
 
 function Listing() {
   return (
     <div className="w-full h-[90%] flex flex-col gap-[20px]">
-      <MetricsMenu />
       <div className="flex justify-between items-center">
         <h1 className="text-[28px] font-semibold">Listing</h1>
         <div className="flex items-center gap-[15px]">

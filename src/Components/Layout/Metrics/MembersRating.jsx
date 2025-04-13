@@ -1,9 +1,6 @@
-import MetricsMenu from "../../Common/MetricsMenu";
-
 function MembersRating() {
   return (
     <div className="w-full h-[90%] flex flex-col gap-[20px]">
-      <MetricsMenu />
       <h1 className="text-[28px] font-semibold">Members Rating</h1>
 
       <div className="w-full bg-white py-[30px] px-[40px]">

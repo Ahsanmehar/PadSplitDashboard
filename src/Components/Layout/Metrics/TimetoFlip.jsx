@@ -1,4 +1,3 @@
-import MetricsMenu from "../../Common/MetricsMenu";
 import {
   LineChart,
   Line,
@@ -6,6 +5,7 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
+  Area,
 } from "recharts";
 
 const data = [
@@ -20,7 +20,6 @@ const data = [
 function TimetoFlip() {
   return (
     <div className="w-full h-[90%] flex flex-col gap-[20px]">
-      <MetricsMenu />
       <h1 className="text-[28px] font-semibold">Time to Flip</h1>
 
       <div className="w-full flex flex-col items-center gap-[10px] rounded-[10px] p-[25px] bg-white">
@@ -40,9 +39,18 @@ function TimetoFlip() {
 
         <ResponsiveContainer width="100%" height={500}>
           <LineChart data={data}>
-            <XAxis dataKey="name" />
-            <YAxis dataKey={"value"} />
+            <XAxis dataKey="name" axisLine={false} />
+            <YAxis dataKey={"value"} axisLine={false} />
             <Tooltip />
+            {/* Mountain effect (Area Chart) */}
+            <Area
+              type="monotone"
+              dataKey="value"
+              stroke="none"
+              fill={"#fefbfb"}
+            />
+
+            {/* Line Chart */}
             <Line
               type="monotone"
               dataKey="value"

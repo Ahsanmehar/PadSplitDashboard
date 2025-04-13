@@ -1,9 +1,7 @@
-import MetricsMenu from "../../Common/MetricsMenu";
 
 function Downloads() {
   return (
     <div className="w-full h-[90%] flex flex-col gap-[20px]">
-      <MetricsMenu />
       <h1 className="text-[28px] font-semibold">Downloads</h1>
 
       <div className="flex flex-col gap-[20px] w-full bg-white py-[30px] px-[40px] rounded-[10px]">
